@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Edame Noodles",
+        "description": "Delicious noodles with Edame Beans and Garlic oil",
+        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
+        "image": "/img/dish.png"
+    },
+    {
+        "name": "Edame Noodles",
+        "description": "Delicious noodles with Edame Beans and Garlic oil",
+        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
+        "image": "/img/dish.png"
+    },
+    {
+        "name": "Edame Noodles",
+        "description": "Delicious noodles with Edame Beans and Garlic oil",
+        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
+        "image": "/img/dish.png"
+    },
+    {
+        "name": "Edame Noodles",
+        "description": "Delicious noodles with Edame Beans and Garlic oil",
+        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
+        "image": "/img/dish.png"
+    }
+]

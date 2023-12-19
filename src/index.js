@@ -1,15 +1,25 @@
-// src/index.js
-import { LitElement, html } from "lit";
-import "@components/MyComponent.js";
-import "@components/General/Navbar";
+import { Router } from "@vaadin/router";
 
-class MyApp extends LitElement {
-    render() {
-        return html`<div>
-            <app-navbar></app-navbar>
-            <my-component></my-component>
-        </div>`;
-    }
+function initRouter() {
+    const router = new Router(document.querySelector("#app"));
+
+    router.setRoutes([
+        {
+            path: "/",
+            component: "home-app",
+            action: () => import("@pages/Home"),
+        },
+        {
+            path: "/about",
+            component: "about-app",
+            action: () => import("@pages/About"),
+        },
+        {
+            path: "(.*)",
+            component: "not-found-app",
+            action: () => import("@pages/NotFound"),
+        },
+    ]);
 }
 
-customElements.define("my-app", MyApp);
+window.addEventListener("load", () => initRouter());

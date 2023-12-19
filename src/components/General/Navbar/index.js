@@ -1,4 +1,3 @@
-// src/components/MyComponent.js
 import { LitElement, html, css } from "lit";
 import { bootstrap } from "../../../styles/bootstrap-lit";
 // import "bootstrap/dist/js/bootstrap";
@@ -6,10 +5,17 @@ import { bootstrap } from "../../../styles/bootstrap-lit";
 class MyComponent extends LitElement {
     static styles = [bootstrap];
 
+    createRenderRoot() {
+        return this;
+    }
+
     render() {
-        return html` <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        return html` <nav
+            class="navbar navbar-expand-lg bg-primary sticky-top"
+            data-bs-theme="dark"
+        >
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Chris Food</a>
+                <a class="navbar-brand" href="/">Chris Food</a>
                 <button
                     class="navbar-toggler"
                     type="button"
