@@ -3,7 +3,7 @@ import { LitElement, html } from "lit";
 import "@components/General/Navbar";
 import "@components/Home/DishesList";
 
-class Home extends LitElement {
+class Contact extends LitElement {
     createRenderRoot() {
         return this;
     }
@@ -12,23 +12,21 @@ class Home extends LitElement {
         return html`<div>
             <app-navbar></app-navbar>
             <div class="container">
-                <h3 class="mt-3">About Food Ninja</h3>
+                <h3 class=" mt-3">Contact Us</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Ducimus, porro voluptatum illum veniam eaque sunt sit labore
                     provident eligendi! Voluptate amet suscipit inventore unde
                     maxime atque impedit officia nobis laboriosam!
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam voluptatibus omnis, ea doloremque exercitationem id
-                    necessitatibus. Voluptatem officiis cupiditate commodi
-                    totam, hic laborum est ducimus amet iure, non dignissimos
-                    illo.
-                </p>
+                <h6>Find us at:</h6>
+                <ul>
+                    <li>123 Spicy Noodle Road</li>
+                    <li>Manchester, UK</li>
+                </ul>
             </div>
         </div>`;
     }
 }
 
-customElements.define("about-app", Home);
+customElements.define("contact-app", Contact);

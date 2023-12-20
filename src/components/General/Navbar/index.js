@@ -3,16 +3,26 @@ import { bootstrap } from "../../../styles/bootstrap-lit";
 // import "bootstrap/dist/js/bootstrap";
 
 class MyComponent extends LitElement {
-    static styles = [bootstrap];
-
     createRenderRoot() {
         return this;
     }
 
+    // static styles = [
+    //     bootstrap,
+    //     css`
+    //         nav {
+    //             background: #c87b1f;
+    //         }
+    //         h1 {
+    //             color: #c87b1f;
+    //         }
+    //     `,
+    // ];
+
     render() {
         return html` <nav
-            class="navbar navbar-expand-lg bg-primary sticky-top"
-            data-bs-theme="dark"
+            class="navbar navbar-expand-lg sticky-top"
+            style="background: #fd9e2b;"
         >
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">Chris Food</a>

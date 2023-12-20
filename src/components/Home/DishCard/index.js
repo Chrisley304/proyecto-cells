@@ -21,6 +21,16 @@ class MyComponent extends LitElement {
         this.dishPhoto = defaultDishPhoto;
     }
 
+    handleDelete() {
+        this.dispatchEvent(
+            new CustomEvent("delete-dish", {
+                detail: {
+                    id: this.id,
+                },
+            })
+        );
+    }
+
     render() {
         return html`<div class="card">
             <!-- <img src="${this
@@ -37,7 +47,12 @@ class MyComponent extends LitElement {
                     <div class="col-8 d-flex flex-column">
                         <h5 class="card-title">${this.title}</h5>
                         <p class="card-text">${this.description}</p>
-                        <a href="#" class="btn btn-danger">${this.cta}</a>
+                        <button
+                            class="btn btn-danger"
+                            @click=${this.handleDelete}
+                        >
+                            ${this.cta}
+                        </button>
                     </div>
                 </div>
             </div>

@@ -15,6 +15,11 @@ function initRouter() {
             action: () => import("@pages/About"),
         },
         {
+            path: "/contact",
+            component: "contact-app",
+            action: () => import("@pages/Contact"),
+        },
+        {
             path: "(.*)",
             component: "not-found-app",
             action: () => import("@pages/NotFound"),

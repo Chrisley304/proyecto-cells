@@ -3,24 +3,41 @@
         "name": "Edame Noodles",
         "description": "Delicious noodles with Edame Beans and Garlic oil",
         "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
-        "image": "/img/dish.png"
+        "image": "/img/dish1.png"
     },
     {
-        "name": "Edame Noodles",
-        "description": "Delicious noodles with Edame Beans and Garlic oil",
-        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
-        "image": "/img/dish.png"
+        "name": "Spaghetti Bolognese",
+        "description": "Classic spaghetti with savory Bolognese sauce",
+        "ingredients": [
+            "Spaghetti",
+            "Ground Beef",
+            "Tomato Sauce",
+            "Onions",
+            "Garlic"
+        ],
+        "image": "/img/dish2.png"
     },
     {
-        "name": "Edame Noodles",
-        "description": "Delicious noodles with Edame Beans and Garlic oil",
-        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
-        "image": "/img/dish.png"
+        "name": "Vegetarian Stir-Fry",
+        "description": "Healthy stir-fry with assorted vegetables and tofu",
+        "ingredients": [
+            "Broccoli",
+            "Bell Peppers",
+            "Carrots",
+            "Tofu",
+            "Soy Sauce"
+        ],
+        "image": "/img/dish3.png"
     },
     {
-        "name": "Edame Noodles",
-        "description": "Delicious noodles with Edame Beans and Garlic oil",
-        "ingredients": ["Edame Beans", "Noodles", "Garlic oil"],
-        "image": "/img/dish.png"
+        "name": "Chicken Alfredo Pasta",
+        "description": "Creamy Alfredo sauce with grilled chicken over pasta",
+        "ingredients": [
+            "Fettuccine Pasta",
+            "Chicken Breast",
+            "Cream",
+            "Parmesan Cheese"
+        ],
+        "image": "/img/dish4.png"
     }
 ]
