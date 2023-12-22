@@ -88,7 +88,7 @@ class DishesList extends LitElement {
         </div>`;
 
         return html`<div>
-            ${!this._showModal ? modal : nothing}
+            ${this._showModal ? modal : nothing}
             <div class="container mt-2">
                 <div class="row g-3">
                     ${map(
